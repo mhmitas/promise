@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grunge Promise</title>
+    <title>Promise To Me and Parents</title>
     <link rel="icon" type="image/x-icon" href="/plane-solid.ico">
     <style>
         body {
@@ -59,7 +60,7 @@
             text-transform: uppercase;
             transform: rotate(-5deg);
             letter-spacing: 2px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
             margin-bottom: 40px;
             filter: url(#texture);
         }
@@ -85,15 +86,16 @@
         }
     </style>
 </head>
+
 <body>
     <!-- SVG Filter for texture effect -->
     <svg style="display: none;">
         <filter id="texture">
-            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise"/>
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" result="noise" />
             <feDiffuseLighting in="noise" lighting-color="white" surfaceScale="2">
-                <feDistantLight azimuth="45" elevation="60"/>
+                <feDistantLight azimuth="45" elevation="60" />
             </feDiffuseLighting>
-            <feComposite operator="in" in2="SourceGraphic"/>
+            <feComposite operator="in" in2="SourceGraphic" />
         </filter>
     </svg>
 
@@ -101,11 +103,12 @@
         <div class="corner-accent top-left"></div>
         <div class="corner-accent bottom-right"></div>
         <div class="dots"></div>
-        
+
         <div class="text-container">
             <div class="promise">Promise</div>
             <div class="numbers">8 - 8.5</div>
         </div>
     </div>
 </body>
+
 </html>
